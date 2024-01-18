@@ -1,0 +1,546 @@
+2023-11-21 09:36:39.762  INFO 18080 --- [main] com.example.oct2023.Oct2023Application   : Starting Oct2023Application using Java 11.0.13 on LAPTOP-48BG4U6Q with PID 18080 (C:\Personal\SpringbootApplications\oct2023\oct2023\target\classes started by svams in C:\Personal\SpringbootApplications\oct2023\oct2023)
+2023-11-21 09:36:39.779  INFO 18080 --- [main] com.example.oct2023.Oct2023Application   : The following 1 profile is active: "local"
+2023-11-21 09:36:41.399  INFO 18080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 09:36:41.483  INFO 18080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interfaces.
+2023-11-21 09:36:42.542  INFO 18080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2025 (http)
+2023-11-21 09:36:42.552  INFO 18080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-21 09:36:42.552  INFO 18080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 09:36:42.706  INFO 18080 --- [main] o.a.c.c.C.[.[localhost].[/oct2023]       : Initializing Spring embedded WebApplicationContext
+2023-11-21 09:36:42.707  INFO 18080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2800 ms
+2023-11-21 09:36:43.162  INFO 18080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-21 09:36:43.392  INFO 18080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-21 09:36:43.488  INFO 18080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 09:36:43.608  INFO 18080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 09:36:43.941  INFO 18080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 09:36:44.115  INFO 18080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-21 09:36:44.754  INFO 18080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 09:36:44.770  INFO 18080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 09:36:44.944  WARN 18080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 09:36:47.109  INFO 18080 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46f597f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a045e85, org.springframework.security.web.context.SecurityContextPersistenceFilter@28d728f1, org.springframework.security.web.header.HeaderWriterFilter@4110ffe5, org.springframework.security.web.authentication.logout.LogoutFilter@5f3fafca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@554a2f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68423388, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29f86630, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48861d1, org.springframework.security.web.session.SessionManagementFilter@6cb2b947, org.springframework.security.web.access.ExceptionTranslationFilter@46e38c28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60e5b3a8]
+2023-11-21 09:36:47.137  INFO 18080 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-11-21 09:36:47.302  INFO 18080 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-user_group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = user_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-21 09:36:47.621  INFO 18080 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-11-21 09:36:47.621  INFO 18080 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-11-21 09:36:47.621  INFO 18080 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1700539607618
+2023-11-21 09:36:47.625  INFO 18080 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-user_group-1, groupId=user_group] Subscribed to topic(s): student.oct2023.topic
+2023-11-21 09:36:47.660  INFO 18080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2025 (http) with context path '/oct2023'
+2023-11-21 09:36:47.675  INFO 18080 --- [main] com.example.oct2023.Oct2023Application   : Started Oct2023Application in 8.693 seconds (JVM running for 9.367)
+2023-11-21 09:36:50.115  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:36:50.118  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:36:50.119  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:36:52.256  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:36:52.257  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:36:52.257  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:36:54.421  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:36:54.422  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:36:54.422  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:36:56.701  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:36:56.702  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:36:56.702  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:36:59.159  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:36:59.160  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:36:59.160  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:02.124  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:02.125  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:02.125  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:05.267  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:05.267  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:05.267  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:08.170  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:08.171  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:08.171  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:11.331  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:11.332  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:11.332  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:14.339  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:14.340  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:14.340  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:17.476  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:17.477  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:17.477  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:20.493  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:20.494  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:20.494  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:23.456  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:23.457  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:23.457  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:26.414  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:26.414  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:26.414  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:29.510  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:29.511  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:29.512  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:32.481  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:32.482  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:32.482  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:35.687  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:35.687  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:35.687  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:38.845  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:38.845  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:38.845  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:41.753  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:41.754  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:41.755  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:44.757  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:44.758  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:44.759  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:47.838  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:47.839  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:47.839  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:50.922  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:50.923  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:50.923  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:54.073  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:54.074  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:54.074  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:37:57.096  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:37:57.097  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:37:57.097  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:00.247  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:00.248  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:00.248  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:03.341  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:03.341  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:03.342  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:06.496  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:06.496  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:06.497  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:09.412  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:09.413  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:09.413  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:12.422  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:12.422  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:12.423  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:15.550  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:15.551  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:15.551  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:18.646  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:18.647  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:18.647  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:21.609  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:21.610  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:21.610  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:24.707  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:24.708  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:24.709  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:27.797  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:27.797  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:27.798  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:30.744  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:30.745  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:30.745  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:33.895  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:33.895  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:33.895  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:36.988  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:36.988  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:36.988  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:39.961  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:39.961  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:39.962  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:43.106  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:43.106  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:43.106  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:46.261  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:46.262  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:46.262  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:49.228  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:49.229  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:49.231  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:52.376  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:52.376  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:52.376  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:55.300  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:55.300  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:55.300  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:38:58.394  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:38:58.395  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:38:58.395  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:01.352  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:01.352  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:01.353  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:04.446  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:04.447  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:04.447  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:07.407  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:07.407  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:07.407  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:10.331  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:10.331  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:10.331  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:13.545  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:13.547  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:13.548  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:16.461  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:16.473  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:16.474  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:19.373  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:19.374  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:19.374  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:22.644  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:22.644  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:22.645  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:25.893  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:25.894  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:25.894  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:28.916  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:28.916  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:28.916  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:31.935  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:31.936  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:31.936  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:34.850  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:34.851  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:34.851  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:37.889  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:37.890  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:37.890  WARN 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:39.694  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-21 09:39:39.694  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-21 09:39:39.694  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-user_group-1, groupId=user_group] Unsubscribed all topics or patterns and assigned partitions
+2023-11-21 09:39:39.695  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-21 09:39:39.695  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-21 09:39:39.696  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-11-21 09:39:39.697  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-21 09:39:39.697  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-11-21 09:39:39.702  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-user_group-1 unregistered
+2023-11-21 09:39:39.702  INFO 18080 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user_group: Consumer stopped
+2023-11-21 09:39:39.708  INFO 18080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 09:39:39.718  INFO 18080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-21 09:39:39.726  INFO 18080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-21 09:39:45.501  INFO 7812 --- [main] com.example.oct2023.Oct2023Application   : Starting Oct2023Application using Java 11.0.13 on LAPTOP-48BG4U6Q with PID 7812 (C:\Personal\SpringbootApplications\oct2023\oct2023\target\classes started by svams in C:\Personal\SpringbootApplications\oct2023\oct2023)
+2023-11-21 09:39:45.505  INFO 7812 --- [main] com.example.oct2023.Oct2023Application   : The following 1 profile is active: "local"
+2023-11-21 09:39:47.274  INFO 7812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 09:39:47.350  INFO 7812 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2023-11-21 09:39:49.171  INFO 7812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 2025 (http)
+2023-11-21 09:39:49.182  INFO 7812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-21 09:39:49.182  INFO 7812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 09:39:49.446  INFO 7812 --- [main] o.a.c.c.C.[.[localhost].[/oct2023]       : Initializing Spring embedded WebApplicationContext
+2023-11-21 09:39:49.447  INFO 7812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3846 ms
+2023-11-21 09:39:49.937  INFO 7812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-21 09:39:50.133  INFO 7812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-21 09:39:50.200  INFO 7812 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 09:39:50.305  INFO 7812 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 09:39:50.769  INFO 7812 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 09:39:51.017  INFO 7812 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-21 09:39:51.742  INFO 7812 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 09:39:51.757  INFO 7812 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 09:39:51.942  WARN 7812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 09:39:54.602  INFO 7812 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a5c6009, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c4e63b3, org.springframework.security.web.context.SecurityContextPersistenceFilter@4446a191, org.springframework.security.web.header.HeaderWriterFilter@755a4ef5, org.springframework.security.web.authentication.logout.LogoutFilter@72fa021, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@108d59b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e0602ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53813f01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2703785e, org.springframework.security.web.session.SessionManagementFilter@4110ffe5, org.springframework.security.web.access.ExceptionTranslationFilter@3a388769, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@715d82a0]
+2023-11-21 09:39:54.628  INFO 7812 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-11-21 09:39:54.802  INFO 7812 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-user_group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = user_group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-11-21 09:39:55.047  INFO 7812 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-11-21 09:39:55.048  INFO 7812 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-11-21 09:39:55.048  INFO 7812 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1700539795042
+2023-11-21 09:39:55.056  INFO 7812 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-user_group-1, groupId=user_group] Subscribed to topic(s): student.oct2023.topic
+2023-11-21 09:39:55.130  INFO 7812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 2025 (http) with context path '/oct2023'
+2023-11-21 09:39:55.162  INFO 7812 --- [main] com.example.oct2023.Oct2023Application   : Started Oct2023Application in 10.317 seconds (JVM running for 10.989)
+2023-11-21 09:39:57.571  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:57.577  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:57.577  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:39:59.728  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:39:59.729  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:39:59.729  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:01.887  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:01.888  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:01.888  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:04.097  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:04.098  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:04.098  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:06.628  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:06.628  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:06.628  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:09.407  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:09.408  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:09.408  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:12.361  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:12.361  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:12.361  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:15.634  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:15.636  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:15.636  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:18.531  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:18.532  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:18.532  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:21.687  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:21.688  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:21.688  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:24.779  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:24.780  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:24.780  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:27.990  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:27.991  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:27.991  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:31.147  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:31.148  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:31.148  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:34.231  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:34.231  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:34.232  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:37.171  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:37.172  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:37.172  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:40.326  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:40.327  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:40.327  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:43.346  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:43.346  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:43.346  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:46.569  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:46.569  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:46.570  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:49.525  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:49.526  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:49.526  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:52.677  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:52.677  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:52.677  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:55.961  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:55.961  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:55.961  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:40:58.991  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:40:58.992  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:40:58.992  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:01.889  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:01.889  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:01.889  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:04.980  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:04.981  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:04.981  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:08.143  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:08.143  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:08.143  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:11.235  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:11.235  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:11.236  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:14.141  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:14.142  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:14.143  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:17.392  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:17.393  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:17.393  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:20.430  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:20.431  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:20.431  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:23.396  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:23.396  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:23.396  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:26.487  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:26.488  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:26.488  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:29.440  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:29.441  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:29.441  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:32.435  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:32.436  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:32.436  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:35.329  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:35.330  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:35.331  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:38.291  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:38.292  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:38.292  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:41.199  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:41.200  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:41.200  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:44.222  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Node -1 disconnected.
+2023-11-21 09:41:44.223  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-11-21 09:41:44.223  WARN 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-user_group-1, groupId=user_group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-11-21 09:41:46.077  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-21 09:41:46.078  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-21 09:41:46.080  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-user_group-1, groupId=user_group] Unsubscribed all topics or patterns and assigned partitions
+2023-11-21 09:41:46.081  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Resetting generation due to: consumer pro-actively leaving the group
+2023-11-21 09:41:46.082  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-user_group-1, groupId=user_group] Request joining group due to: consumer pro-actively leaving the group
+2023-11-21 09:41:46.084  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-11-21 09:41:46.085  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-11-21 09:41:46.085  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-11-21 09:41:46.093  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-user_group-1 unregistered
+2023-11-21 09:41:46.095  INFO 7812 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : user_group: Consumer stopped
+2023-11-21 09:41:46.121  INFO 7812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 09:41:46.156  INFO 7812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-21 09:41:46.174  INFO 7812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
